@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Online Booking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+
+        <style>
+            .align{
+                padding-left: 10%;
+                padding-right : 20%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container align">
+            <h1>Book Your Travel Here !</h1>
+            <form action="http://localhost:1234/register_details" method="GET">
+                <div class="form-group">
+                    <label for="personName">Your Name</label>
+                    <input class="form-control" type="text"  name="personName" id="personName" placeholder="Type in your name">
+                </div>
+                <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input class="form-control" type="text"  name="email" id="email" placeholder="Type in your Email">
+                </div>
+                <div class="form-group">
+                        <label for="date">Date</label>
+                        <input class="form-control" type="date"  name="date" id="date" placeholder="mm/dd/yyyy">
+                </div>
+                <div class="form-group">
+                        <label for="seats">Seats</label>
+                        <input class="form-control" type="text"  name="seats" id="seats" placeholder="Seats">
+                </div>
+                <div class="form-group">
+                        <label for="package">Package</label>
+                        <select class="form-control"  name="package" id="package" placeholder="Select Package">
+                            <option>The Chadar Trek</option>
+                            <option>The Markha Trek</option>
+                            <option>The Kangri Trek</option>
+                            <option>Valley of Flowers</option>
+                            <option>The Lamayuru Trek</option>
+                        </select>
+                </div>
+                <button class="btn btn-primary" type="submit">Book</button>
+            </form>
+        </div>
+    </body>
+</html>
